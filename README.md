@@ -29,6 +29,6 @@ by users (f.ex. which song they are listening). The objects contained in both bu
 
 ### ETL pipeline
 
-1. Set up a config file **dl.cfg**. Put in the information for your cluster and IAM-Role that can manage your cluster and read S3 buckets.
+1. Set up a config file `dl.cfg`. Put in the information for your cluster and IAM-Role that can manage your cluster and read S3 buckets.
 2. Specify output data path in the main function of `etl.py`
 3. Run `etl.py` to read the database credentials from the config file, connect to the database, load from S3 JSON files and create the final data lake by back load of these dimensional process to S3.
